@@ -1,0 +1,12 @@
+[submodule "binutils"]
+	path = binutils
+	url = https://github.com/cepawiel/binutils-gdb-dc
+[submodule "newlib"]
+	path = newlib
+	url = git@github.com:cepawiel/newlib-kos.git
+[submodule "gccrs"]
+	path = gccrs
+	url = https://github.com/cepawiel/gccrs-dreamcast
+[submodule "kallistios"]
+	path = kallistios
+	url = git@github.com:cepawiel/KallistiOS.git
