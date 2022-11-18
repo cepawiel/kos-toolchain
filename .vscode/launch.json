@@ -1,0 +1,39 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "cwd": "${workspaceRoot}/kallistios/examples/dreamcast/hello",
+            "name": "KOS Example Hello (LXDream-Nitro)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/kallistios/examples/dreamcast/hello/hello.elf",
+            "miDebuggerPath": "/usr/bin/gdb-multiarch",
+            "setupCommands": [{
+                "text": "set architecture sh",
+                "description": "Set GDB Arch to SuperH",
+                "ignoreFailures" : false,
+            }],
+            "miDebuggerServerAddress": ":9999",
+            "debugServerPath": "~/Git/lxdream-nitro/build/lxdream-nitro",
+            "debugServerArgs": "--log=DEBUG --gdb-sh4=9999 -A null -e ${workspaceRoot}/kallistios/examples/dreamcast/hello/hello.elf -n",
+            "filterStdout": true,
+            "filterStderr": true,
+            "externalConsole": false,
+            "logging": {
+                "exceptions": true,
+                "moduleLoad": true,
+                "programOutput": true,
+                "engineLogging": false,
+                "trace": false,
+                "traceResponse": false
+            },
+            "stopAtConnect": false,
+            "launchCompleteCommand": "exec-run",
+            "serverStarted": "SH4 GDB server running on port",
+            "useExtendedRemote": true
+        }
+    ]
+}
