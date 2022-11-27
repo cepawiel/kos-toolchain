@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "mutex.h": "c",
+        "dbglog.h": "c",
+        "assert.h": "c",
+        "spinlock.h": "c",
+        "lock.h": "c",
+        "newlib.h": "c",
+        "picolibc.h": "c",
+        "broadband_adapter.h": "c",
+        "sched.h": "c",
+        "fs.h": "c",
+        "stdio.h": "c",
+        "pvr_mem_core.h": "c",
+        "*.def": "c",
+        "*.tcc": "c",
+        "cstdlib": "c"
+    }
+}

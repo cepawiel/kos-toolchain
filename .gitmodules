@@ -10,3 +10,6 @@
 [submodule "kallistios"]
 	path = kallistios
 	url = git@github.com:cepawiel/KallistiOS.git
+[submodule "picolibc"]
+	path = picolibc
+	url = https://github.com/cepawiel/picolibc-kos
